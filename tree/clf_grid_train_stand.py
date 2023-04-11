@@ -69,7 +69,7 @@ for dataset in ['sonar', 'german', 'spam', 'credit', 'adult', 'electricity']:
         for _alpha in alpha_list:
             for _eta in eta_list:
                 trb_clf = TRBLearner(objective,
-                                     base_score=0.5,  # 回归为0
+                                     base_score=0.5,  
                                      n_estimators=n_estimators,
                                      alpha=_alpha,
                                      eta=_eta)
